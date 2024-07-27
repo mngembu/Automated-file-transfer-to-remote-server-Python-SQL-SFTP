@@ -12,10 +12,10 @@ sql_query_path = r"C:\Users\mngembu\pyproject\wesa\wesa_donors_stores.sql"
 #Define path to destination directory
 WORK_SPACE = r"C:\Users\mngembu\OneDrive - Goodwill Industries of Alberta\WESA_data\data_dump\wesa\temp"
 
-SERVER_NAME = "data.gdp.goodwill.ab.ca"
-DATABASE_NAME = "gdp"
-UID = "mngembu"
-PWD = "aEXdEa6UvZgAmedn"
+SERVER_NAME = os.environ.get("SERVER")
+DATABASE_NAME = os.environ.get("DATABASE")
+UID = os.environ.get("UID_DB")
+PWD = os.environ.get("PWD_DB")
 PORT = "5432"
 
 
@@ -73,11 +73,11 @@ try:
 
     # remote server credentials
     #Protocol = [WinSCP.Protocol]::Sftp
-    HostName = "ftp.wesa.app"
-    UserName = "ftpalberta"
-    PassWord = "s4#OyUa#D69P1a&7i"
-    Port = 60022
-    #SshHostKeyFingerprint = "ssh-rsa 3072 BwYT9J862vYEwkhtOnG3iEF3+bD8Dr79oEdcrNIAJmA"
+    HostName = os.environ.get("HOST_FTP")
+    UserName = os.environ.get("USER_FTP")
+    PassWord = os.environ.get("PWD_FTP")
+    Port = os.environ.get("PORT_FTP")
+    
 
     SSH_Client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     SSH_Client.connect( hostname=HostName, port=Port, username=UserName,
