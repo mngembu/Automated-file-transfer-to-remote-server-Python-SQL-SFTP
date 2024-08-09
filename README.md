@@ -20,24 +20,20 @@ saved into `.csv` files, and securely transferred to a remote SFTP server in the
 
 ## Installation and Usage
 1. **Clone the Repository**:
-   ```bash
    git clone "https://github.com/mngembu/Automated-file-transfer-to-remote-server-Python-SQL-SFTP.git"
    cd automated-file-transfer-system
 
 2. **Set Up the Virtual Environment** 
- ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 3. **Install Dependencies**:
-```bash
 python -m pip install -r requirements.txt
 
 4. **Configure the Application**:
 - Update the config.ini file with the necessary database credentials, SFTP server details, and other configuration settings.
 
 5. **Run the Application**:
-```bash
 python run_scripts.py
 
 6. **Monitor the Transfer Process**:
