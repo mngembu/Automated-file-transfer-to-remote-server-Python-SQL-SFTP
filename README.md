@@ -20,8 +20,8 @@ saved into `.csv` files, and securely transferred to a remote SFTP server in the
 
 ## Installation and Usage
 1. **Clone the Repository**:
-   git clone "https://github.com/mngembu/Automated-file-transfer-to-remote-server-Python-SQL-SFTP.git"
-   cd automated-file-transfer-system
+   - git clone "https://github.com/mngembu/Automated-file-transfer-to-remote-server-Python-SQL-SFTP.git"
+   - cd automated-file-transfer-system
 
 2. **Set Up the Virtual Environment** 
 - python -m venv venv
