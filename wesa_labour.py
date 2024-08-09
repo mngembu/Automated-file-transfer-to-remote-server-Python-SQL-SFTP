@@ -5,6 +5,9 @@ import emailing
 import psycopg2
 import paramiko
 import pandas as pd
+from dotenv import load_dotenv
+
+load_dotenv() # this loads all the environment variables
 
 # Define the path to your SQL query file
 sql_query_path = r"C:\Users\mngembu\pyproject\wesa\wesa_labour.sql"
