@@ -24,17 +24,17 @@ saved into `.csv` files, and securely transferred to a remote SFTP server in the
    cd automated-file-transfer-system
 
 2. **Set Up the Virtual Environment** 
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+- python -m venv venv
+- source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 3. **Install Dependencies**:
-python -m pip install -r requirements.txt
+- python -m pip install -r requirements.txt
 
 4. **Configure the Application**:
 - Update the config.ini file with the necessary database credentials, SFTP server details, and other configuration settings.
 
 5. **Run the Application**:
-python run_scripts.py
+- python run_scripts.py
 
 6. **Monitor the Transfer Process**:
 - Use WinSCP or another SFTP client to monitor the file transfer process and ensure successful completion.
