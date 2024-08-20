@@ -1,5 +1,5 @@
-Drop table public.sales1;
-Drop table public.sales2;
+Drop table if exists public.sales1;
+Drop table if exists public.sales2;
 
 SELECT 
  	 a.balance_start_dt AS "Date",

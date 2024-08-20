@@ -1,12 +1,16 @@
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import smtplib
+import os
+from dotenv import load_dotenv
+
+load_dotenv() # this loads all the environment variables
 
 def send_alert_email(error_message):
     # Email configuration
-    sender_email = "mary.ngembu@gmail.com"
-    receiver_email = "mngembu@goodwill.ab.ca"
-    password = "uprq jjxr swtp rqjh"
+    sender_email = os.getenv("SENDER")
+    receiver_email = os.getenv("RECEIVER")
+    password = os.getenv("PWD_EMAIL")
 
     # Email content
     message = MIMEMultipart()
